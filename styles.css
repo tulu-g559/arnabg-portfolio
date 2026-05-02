@@ -600,7 +600,8 @@ footer span { color: var(--cyan); font-weight: 700; }
 
 @media (max-width: 1024px) {
   .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
-  .hero-right, .nav-links { display: none; }
+  .hero-right { border-top: var(--border-width) solid var(--border-color); }
+  .nav-links { display: none; }
   .exp-item { grid-template-columns: 1fr; }
   .exp-left { border-right: none; border-bottom: var(--border-width) solid var(--border-color); }
   .contact-left { border-right: none; border-bottom: var(--border-width) solid #FFF; }
@@ -612,6 +613,9 @@ footer span { color: var(--cyan); font-weight: 700; }
   .project-card, .skill-category, .ach-card { border-right: none; }
   .project-card:not(:last-child), .skill-category:not(:last-child), .ach-card:not(:last-child) { border-bottom: var(--border-width) solid var(--border-color); }
   .hero-left, .about-left, .contact-left, .contact-right { padding: 40px 24px; }
+  .hero-tags-area { padding: 32px 24px; }
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .stat-box { padding: 24px 16px; }
   footer { flex-direction: column; gap: 16px; text-align: center; }
   .section-num { font-size: 6rem; top: -2rem; left: 0; }
   /* Disable 3D tilt on mobile for performance */
