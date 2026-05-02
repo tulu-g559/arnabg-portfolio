@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio • Arnab Ghosh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" data-hover>Arnab<span>G</span>.DEV</a>
+    <div class="nav-links">
+      <a href="#about" data-hover>About</a>
+      <a href="#experience" data-hover>Experience</a>
+      <a href="#projects" data-hover>Projects</a>
+      <a href="#skills" data-hover>Skills</a>
+      <a href="#contact" data-hover>Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeToggle" data-hover>☀</button>
+      <!-- Resume Button -->
+      <a href="https://drive.google.com/file/d/1vFejku1Rnucv5Ga2LORfjf-TEu6KmPEZ/view?usp=sharing" target="_blank" class="nav-resume-btn" data-hover>
+        RESUME↗
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <canvas id="space-canvas"></canvas>
+  <div class="container">
+    <div class="hero-grid fade-up">
+      <div class="hero-left">
+        <div class="hero-badge">● Let's build it</div>
+        <h1 class="hero-name reveal-text">ARNAB<br><span class="highlight">GHOSH</span></h1>
+        <div class="hero-role reveal-text" style="transition-delay: 0.1s;">
+          <span id="typingText"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-desc reveal-text" style="transition-delay: 0.2s;">Engineering AI that ships fast. Developer with hands-on experience in AI, backend, and full-stack systems — creating production-ready applications powered by GenAI and thoughtful, data-driven system design.</p>
+        <div class="hero-btns reveal-text" style="transition-delay: 0.3s;">
+          <a href="#projects" class="btn-magnetic btn-primary" data-hover>View Projects →</a>
+          <a href="#contact" class="btn-magnetic btn-secondary" data-hover>Get in Touch ↗</a>
+        </div>
+        <div class="hero-socials reveal-text" style="transition-delay: 0.4s;">
+          <a href="https://github.com/tulu-g559" target="_blank" class="social-link" data-hover>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/arnab-g" target="_blank" class="social-link" data-hover>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://linktr.ee/arnab_g" target="_blank" class="social-link" data-hover>
+  <!-- Replace the single img tag with these two -->
+  <img src="linktree-dark.png" alt="Linktree" width="24" height="24" class="theme-logo light-only">
+  <img src="linktree-white.webp" alt="Linktree" width="24" height="24" class="theme-logo dark-only">
+</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-tags-area">
+          <div class="hero-tag" style="--rot: -3deg;">#GenAI</div>
+          <div class="hero-tag" style="--rot: 2deg;">#Agentic_AI</div>
+          <div class="hero-tag" style="--rot: -1deg;">#RAG</div>
+          <div class="hero-tag" style="--rot: 4deg;">#Full-Stack</div>
+          <div class="hero-tag" style="--rot: 4deg;">#Pipelines</div>
+          <div class="hero-tag" style="--rot: -2deg;">#Web3</div>
+          <div class="hero-tag" style="--rot: 1deg;">#LLMs</div>
+          <div class="hero-tag" style="--rot: 1deg;">#Architecture</div>
+          <div class="hero-tag" style="--rot: -3deg;">#OpenSource</div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <div class="stat-val">10+</div>
+            <div class="stat-label">Hackathons</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">8.46</div>
+            <div class="stat-label">GPA / 10</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">8+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">500+</div>
+            <div class="stat-label">Community Members</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-label">About Me</div>
+      <h2 class="section-title reveal-text">WHO I <span class="accent">AM.</span></h2>
+    </div>
+    <div class="about-grid fade-up">
+      <div class="about-left">
+        <div class="about-photo-frame" data-hover>
+            <!-- Replace the emoji div with your image -->
+            <img src="profile.png" alt="Arnab Ghosh" class="about-photo">
+            <!-- <div class="mono" style="opacity:0.6; margin-top: 8px;">// profile.jpg</div> -->
+          </div>
+        <div class="about-chips">
+          <!-- <div class="about-chip"><div class="chip-dot"></div>B.Tech CSE @ BCREC (2027)</div> -->
+          <div class="about-chip"><div class="chip-dot" style="background:var(--green);"></div>Durgapur, WB, India</div>
+          <div class="about-chip"><div class="chip-dot" style="background:var(--yellow);"></div>GDG on Campus community Co-Lead</div>
+          <div class="about-chip"><div class="chip-dot" style="background:var(--orange);"></div>Oracle Certified GenAI Proffsional</div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-bio">
+  <p>
+    I’m an <strong>AI Engineer and Full-Stack Developer</strong> who doesn’t just build demos—I ship production-ready systems that solve real problems. Whether it’s automating legal pipelines to boost readability by 65% or building decentralized lending workflows on-chain, my focus is always on data-driven design and high-impact execution.
+  </p>
+  <p>
+    As an <strong>Oracle Certified GenAI Professional</strong>, I’ve spent my time deep-diving into RAG, Agentic AI, and LLM observability. I thrive at the intersection of <strong>AI and Web3</strong>, recently engineering decentralized "TrustScores" to bring credit assessment to the unbanked.
+  </p>
+  <p>
+    When I’m not fine-tuning models or securing codebases with tools like <strong>WrathOps</strong>, I’m leading a community of 500+ developers as a GDG Co-Lead or competing in national-level hackathons. I’m a quick learner with a product-first mindset, always looking for the next cool idea to turn into reality.
+  </p>
+  <p>
+  Want to see the full technical breakdown?
+  <a href="#contact" class="accent-link connect-link" data-hover>Connect with me</a> 
+</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ====== EXPERIENCE SECTION ====== -->
+
+<section id="experience">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-label">Work Experience</div>
+      <h2 class="section-title reveal-text">WHERE I'VE <span class="accent">WORKED.</span></h2>
+    </div>
+    <div class="exp-list fade-up">
+      
+      <div class="exp-item">
+        <div class="exp-left">
+          <div class="exp-period">Apr 2026 – Present</div>
+          <div class="exp-company">Astraeus Next Gen Pvt. Ltd.</div>
+          <div style="color:var(--text2); font-size:0.85rem;">Remote</div>
+          <div class="exp-type-badge">Current</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Full Stack Developer Intern</div>
+          <ul class="exp-bullets">
+            <li>Working on features for production applications (CONFIDENTIAL), contributing to backend layers.</li>
+            <li>Collaborating with cross-functional teams to deliver scalable and reliable software.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <div class="exp-period">Sep 2025 – Present</div>
+          <div class="exp-company">GDG on Campus BCREC</div>
+          <div style="color:var(--text2); font-size:0.85rem;">Durgapur</div>
+          <div class="exp-type-badge">Current</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Co-Lead</div>
+          <ul class="exp-bullets">
+            <li>Leading a campus developer community of 500+ students through workshops, study jams and technical learning programs.</li>
+            <li>Organizing events around Google technologies, AI/ML, and modern development practices.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <div class="exp-period">Aug 2025 – Dec 2025</div>
+          <div class="exp-company">Infosys Springboard</div>
+          <div style="color:var(--text2); font-size:0.85rem;">Remote</div>
+          <div class="exp-type-badge past">Past</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">AI/ML Intern</div>
+          <ul class="exp-bullets">
+            <li>Built ClauseEase, an AI-powered contract language simplifier using Python, Flask, and pre-trained models like Legal-BERT.</li>
+            <li>Implemented NLP-based clause detection and text simplification, boosting legal clause readability by 65% and reducing manual review time by 40%.</li>
+            <li>Integrated Firestore for secure user data and deployed the application using Docker for consistent execution.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <div class="exp-period">Apr 2025 – May 2025</div>
+          <div class="exp-company">Pearl Thoughts</div>
+          <div style="color:var(--text2); font-size:0.85rem;">Tamil Nadu, Remote</div>
+          <div class="exp-type-badge past">Past</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">AI Engineer Intern</div>
+          <ul class="exp-bullets">
+            <li>Contributed to an AI-driven hotel service automation platform used by multiple B2B hospitality clients, improving operational decision-making.</li>
+            <li>Built LLM observability pipelines with OpenTelemetry to monitor model outputs across 5+ production workflows, improving debugging.</li>
+            <li>Experimented with machine learning and deep learning models to support the rollout of scalable AI services.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-label">Featured Work</div>
+      <h2 class="section-title reveal-text">THINGS I'VE <span class="accent">BUILT.</span></h2>
+    </div>
+    
+    <div class="projects-grid fade-up">
+      
+      <div class="project-card" data-tilt>
+        <div class="project-header">
+          <div class="project-cat" style="border-color:#9D4EDD; color:#9D4EDD; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Fintech</div>
+          <div class="project-featured">★ Top Project</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Trust-Bridge</div>
+          <div class="project-tagline" style="color:#9D4EDD;">Decentralized Lending AI</div>
+          <p class="project-desc">Engineered an AI-driven TrustScore (0-100) using Gemini-2.5-flash to verify government identity and analyze financial documents. Built an end-to-end lending workflow on Testnet processing 100% on-chain loan settlements.</p>
+          <div class="project-impact">Credit assessment and decentralized lending for unbanked users</div>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Gemini-2.5-flash</span>
+            <span class="tech-badge">Ethereum</span>
+            <span class="tech-badge">Flask</span>
+            <span class="tech-badge">MongoDB</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/tulu-g559/Trust-Bridge" target="_blank" class="proj-link" data-hover>GitHub Repository ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-tilt>
+        <div class="project-header">
+          <div class="project-cat" style="border-color:#00FF9D; color:#00FF9D; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Health-care</div>
+          <div class="project-featured">★ Featured</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Respi_Guard</div>
+          <div class="project-tagline" style="color:#00FF9D;">AI "Medical Twin"</div>
+          <p class="project-desc">Engineered an AI Medical Twin using Gemini 2.5 Flash and LangChain to generate personalized respiratory advice by cross-referencing user medical history with hyper-local AQI data. Includes a one-tap Smart SOS system.</p>
+          <div class="project-impact">Reduced emergency alert time by ~80%</div>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">LangChain</span>
+            <span class="tech-badge">Twilio API</span>
+            <span class="tech-badge">Pinecone</span>
+            <span class="tech-badge">OpenWeatherMap</span>
+            <span class="tech-badge">Gemini AI</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/tulu-g559/Respi_Guard" target="_blank" class="proj-link" data-hover>GitHub Repository ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-tilt>
+        <div class="project-header">
+          <div class="project-cat" style="border-color:#FF6B35; color:#FF6B35; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Intern-help</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">InternSpark-GDG</div>
+          <div class="project-tagline" style="color:#FF6B35;">Internship Readiness Platform</div>
+          <p class="project-desc">An AI-powered web app that helps students become internship-ready using Google technologies. Delivers AI-driven resume analysis, mock HR questions, and readiness scoring to help you prep smart and stand out.</p>
+          <div class="project-impact">Reduced resume review time by ~70% for 30+ students</div>
+          <div class="project-tech">
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Google GenKit</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">GCP</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/tulu-g559/InternSpark-GDG" target="_blank" class="proj-link" data-hover>GitHub Repository ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-tilt>
+  <div class="project-header">
+    <div class="project-cat" style="border-color:#00e5ff; color:#00e5ff; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">EdTech</div>
+    <div class="project-featured">★ Smart Learning</div>
+  </div>
+  <div class="project-body">
+    <div class="project-title">EduNexa</div>
+    <div class="project-tagline" style="color:#00e5ff;">AI-Powered Smart Learning Platform</div>
+    <p class="project-desc">
+      Revolutionizing education by merging AI tutoring with gamified experiences. Developed a seamless ecosystem featuring Nexa Bot for 24/7 support, smart virtual classrooms via Jitsi Meet, and an automated PDF Assignment Solver for instant academic assistance.
+    </p>
+    <div class="project-impact">Revolutionizing traditional education through AI-powered, gamified, and adaptive learning</div>
+    <div class="project-tech">
+      <span class="tech-badge">React</span>
+      <span class="tech-badge">Gemini 1.5 flash</span>
+      <span class="tech-badge">Vertex AI</span>
+      <span class="tech-badge">Jitsi SDK</span>
+      <span class="tech-badge">Firebase</span>
+    </div>
+  </div>
+  <div class="project-links">
+    <a href="https://github.com/tulu-g559/EduNexa" target="_blank" class="proj-link" data-hover>GitHub Repository ↗</a>
+  </div>
+</div>
+
+      <div class="project-card" data-tilt>
+        <div class="project-header">
+          <div class="project-cat" style="border-color:#FF2D55; color:#FF2D55; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">DevSecOps</div>
+          <div class="project-featured">★ Top Project</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">WrathOps-cli</div>
+          <div class="project-tagline" style="color:#FF2D55;">Secret Remediation Tool</div>
+          <p class="project-desc">A command-line interface companion to the WrathOps ecosystem, designed to detect secrets in code repositories and automate remediation directly from the terminal.</p>
+          <div class="project-impact">Automated Commit Blockage + Security Workflow</div>
+          <div class="project-tech">
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">CLI</span>
+            <span class="tech-badge">Automation</span>
+            <span class="tech-badge">Security Analysis</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/tulu-g559/WrathOps-cli" target="_blank" class="proj-link" data-hover>GitHub Repository ↗</a>
+        </div>
+      </div>
+
+     <div class="project-card" data-tilt>
+  <div class="project-header">
+    <div class="project-cat" style="border-color:#FFE500; color:#FFE500; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;">Accessibility</div>
+    <div class="project-featured">★ Collab Project</div>
+  </div>
+  <div class="project-body">
+    <div class="project-title">ZenCue</div>
+    <div class="project-tagline" style="color:#FFE500;">Neuro-AI Web Assistant</div>
+    <p class="project-desc">
+      Co-engineered a neuro-accessible platform designed to empower neurodivergent users. Built the AI backend to simplify complex content, provide visual aid via Groq Vision, and manage onchain subscriptions on the Base Network.
+    </p>
+    <div class="project-impact">Integrated Screenpi.pe for real-time screen analysis</div>
+    <div class="project-tech">
+      <span class="tech-badge">Flask</span>
+      <span class="tech-badge">Groq API</span>
+      <span class="tech-badge">Base Network</span>
+      <span class="tech-badge">OnchainKit</span>
+      <span class="tech-badge">Firebase</span>
+    </div>
+  </div>
+  <div class="project-links">
+    <!-- Link updated to the specific collaborative repository -->
+    <a href="https://github.com/ayonpaul8906/ZenCue" target="_blank" class="proj-link" data-hover>GitHub Repository ↗</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ====== SKILLS SECTION ====== -->
+
+<section id="skills">
+  <div class="container">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <div class="section-label">Skills</div>
+    <h2 class="section-title reveal-text">MY <span class="accent">TOOLKIT.</span></h2>
+  </div>
+  
+  <div class="fade-up">
+    <div class="skills-grid">
+      <!-- AI & ML Engine -->
+      <div class="skill-category">
+        <div class="skill-cat-header no-box">
+          <div class="skill-cat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div class="skill-cat-name">AI & ML Engine</div>
+          <div class="skill-dot" style="background:#9D4EDD;"></div>
+        </div>
+        <div class="skills-tags">
+          <span class="skill-tag">GenAI & LLMs</span>
+          <span class="skill-tag">Agentic AI</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">LangGraph</span>
+          <span class="skill-tag">Model Context Protocol (MCP)</span>
+          <span class="skill-tag">Transformers</span>
+          <span class="skill-tag">Neural Networks</span>
+          <span class="skill-tag">TensorFlow & OpenCV</span>
+          <span class="skill-tag">NLP</span>
+        </div>
+      </div>
+
+      <!-- Backend & Cloud -->
+      <div class="skill-category">
+        <div class="skill-cat-header no-box">
+          <div class="skill-cat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div class="skill-cat-name">Backend & Cloud</div>
+          <div class="skill-dot" style="background:#00e5ff;"></div>
+        </div>
+        <div class="skills-tags">
+          <span class="skill-tag">Python & Flask</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">PostgreSQL & MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Pinecone & FAISS</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">GCP & Vertex AI</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">n8n</span>
+        </div>
+      </div>
+
+      <!-- Frontend & Web3 -->
+      <div class="skill-category">
+        <div class="skill-cat-header no-box">
+          <div class="skill-cat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="skill-cat-name">Frontend & Web3</div>
+          <div class="skill-dot" style="background:#00ff9d;"></div>
+        </div>
+        <div class="skills-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">JavaScript / TypeScript</span>
+          <span class="skill-tag">HTML / CSS</span>
+          <span class="skill-tag">Web3 & Ethereum</span>
+          <span class="skill-tag">Onchainkit</span>
+        </div>
+      </div>
+
+      <!-- Core Languages -->
+      <div class="skill-category">
+        <div class="skill-cat-header no-box">
+          <div class="skill-cat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="skill-cat-name">Core Languages</div>
+          <div class="skill-dot" style="background:#ff6b35;"></div>
+        </div>
+        <div class="skills-tags">
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Postman</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="skills-marquee">
+        <div class="marquee-track" id="marqueeTrack">
+          <span class="marquee-item">LangChain <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Docker <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Python <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">React <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Agentic AI <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">MongoDB <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Model Context Protocol <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">GCP <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">LangChain <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Docker <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Python <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">React <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Agentic AI <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">MongoDB <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">Model Context Protocol <span class="marquee-sep">✦</span></span>
+          <span class="marquee-item">GCP <span class="marquee-sep">✦</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <div class="section-label">Achievements</div>
+      <h2 class="section-title reveal-text">WINS & <span class="accent">BADGES.</span></h2>
+    </div>
+    
+    <div class="ach-grid fade-up">
+      <!-- Oracle Certification -->
+        <div class="ach-card">
+          <!-- Keep your SVG here -->
+          <div class="ach-icon big-icon" style="color: #9D4EDD;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-3-3 3-3 3 3-3 3z"/><path d="M12 2l3 4.5 5 1.5-3.5 4.5 1 5.5-5.5-3-5.5 3 1-5.5-3.5-4.5 5-1.5L12 2z"/></svg>
+          </div>
+          
+          <!-- Fixed Link: Changed div to a tag -->
+          <a href="https://drive.google.com/file/d/12bVvDdD1abdjQmRD7p4U5KhTrvvZmTMw/view?usp=sharing" 
+            target="_blank" 
+            class="ach-title" 
+            style="text-decoration: none; display: block;" 
+            data-hover>
+            Oracle Certified GenAI Professional↗
+          </a>
+          
+          <div class="ach-subtitle">1Z0-1127-25 · Gen AI fundamentals and applied use cases (Issued Oct 2025)</div>
+        </div>
+
+        <!-- Google AI Agents -->
+        <div class="ach-card">
+          <div class="ach-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div class="ach-title">Google Agent Development Kit</div>
+          <div class="ach-subtitle">5-Day AI Agents Intensive Course with Google</div>
+        </div>
+      <div class="ach-card">
+        <div class="ach-num" style="color:var(--cyan);">5+</div>
+        <div class="ach-title">National-level Hackathons</div>
+        <div class="ach-subtitle">SIH, Bharatiya Antariksh, Walmart Sparkathon, Google DG Solution Challenge</div>
+      </div>
+      <!-- Open Source -->
+    <div class="ach-card">
+      <div class="ach-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 22a10 10 0 0 1-10-10"/><path d="M15 12l-3-3-3 3"/><path d="M12 9v6"/></svg>
+      </div>
+      <div class="ach-title">Open Source Contributor</div>
+      <div class="ach-subtitle">SWOC 6.0, Winter of Code, Hacktoberfest — collaborating on real-world repos</div>
+    </div>
+      <div class="ach-card">
+        <div class="ach-num" style="color:var(--green);">500+</div>
+        <div class="ach-title">GDG Campus Co-Lead</div>
+        <div class="ach-subtitle">Leading student developer community at BCREC through workshops & study jams</div>
+      </div>
+      <div class="ach-card">
+        <div class="ach-num" style="color:var(--orange);">10+</div>
+        <div class="ach-title">Certifications</div>
+        <div class="ach-subtitle">Advanced AI/ML and backend development courses on Udemy, Infosys, Salesforce</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ====CONTACT==== -->
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid fade-in">
+      <div class="contact-left">
+        <div class="section-label" style="margin-bottom:12px;">Let's work together</div>
+        <div class="contact-headline">LET'S<br>BUILD<br>SOME<span>THING.</span></div>
+        <p class="contact-sub">Open for internships, collabs, and cool ideas. Got something interesting? I'd love to hear it. Let's talk.</p>
+        
+        <div class="contact-socials">
+          <!-- GitHub -->
+          <a href="https://github.com/tulu-g559" target="_blank" class="social-btn" data-hover>
+            <span class="social-btn-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </span>
+            GitHub
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/arnab-g" target="_blank" class="social-btn" data-hover>
+            <span class="social-btn-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </span>
+            LinkedIn
+          </a>
+
+          <a href="https://linktr.ee/arnab_g" target="_blank" class="social-btn" data-hover>
+            <span class="social-btn-icon">
+              <img src="linktree-dark.png" alt="Linktree" width="24" height="24" class="theme-logo light-only">
+              <img src="linktree-white.webp" alt="Linktree" width="24" height="24" class="theme-logo dark-only">
+            </span>
+            LinkTree
+            </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+          <!-- 1. The Hidden Iframe -->
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { showSuccess(); }"></iframe>
+
+          <!-- 2. The Form (Target matches the iframe name) -->
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSd8FL38Bdyca4N1dYcrZrjS4ydzgMbYB9EnrCTdCigtCcN7EA/formResponse" 
+                method="POST" 
+                target="hidden_iframe" 
+                onsubmit="submitted=true;" 
+                id="google-form"
+                class="contact-form">
+            
+            <div class="form-group">
+              <label class="info-label">Name</label>
+              <input type="text" name="entry.493057566" class="form-input" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <label class="info-label">Email</label>
+              <input type="email" name="entry.722033837" class="form-input" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="info-label">Subject</label>
+              <input type="text" name="entry.1850339037" class="form-input" placeholder="What's this about?">
+            </div>
+
+            <div class="form-group">
+              <label class="info-label">Message</label>
+              <textarea name="entry.180097067" class="form-input" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn" class="contact-email-btn" style="width: 100%; justify-content: center; cursor: pointer; border: 2px solid #000;">
+              SEND MESSAGE
+            </button>
+            
+            <!-- 3. Success Message (Hidden by default) -->
+            <div id="success-msg" style="display:none; color: var(--yellow); font-family: 'Space Mono', monospace; margin-top: 15px; text-align: center; font-weight: bold;">
+              ✓ MESSAGE SENT SUCCESSFULLY!
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer>
+  <div>© 2026 Arnab Ghosh · All rights reserved · v1.0.1</div>
+  <div>Designed by <span>ArnabG.dev</span></div>
+</footer>
+
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-hover>⤒</button>
+
+<script src="script.js"></script>
+</body>
+</html>
