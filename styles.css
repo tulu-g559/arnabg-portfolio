@@ -394,8 +394,20 @@ nav.hidden { transform: translateY(-100%); }
 }
 .tech-badge { padding: 4px 12px; border: 2px solid var(--border-color); font-family: 'Space Mono', monospace; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; background: var(--bg2); }
 
-.project-links { padding: 24px 32px; border-top: var(--border-width) solid var(--border-color); background: var(--bg2); transform: translateZ(20px); }
-.proj-link { padding: 12px 24px; font-family: 'Space Mono', monospace; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; border: 2px solid var(--border-color); background: var(--bg); display: inline-flex; gap: 8px; box-shadow: 4px 4px 0 var(--border-color); transition: all 0.2s; }
+.project-links {
+  display: flex;
+  gap: 12px;
+  padding: 24px 32px;
+  border-top: var(--border-width) solid var(--border-color);
+  background: var(--bg2);
+}
+
+.proj-link {
+  flex: 1; /* Makes both buttons equal width */
+  justify-content: center;
+  padding: 12px 0; /* Adjusted padding for better fit */
+  font-size: 0.7rem; /* Slightly smaller text to prevent overlap on small screens */
+}
 .proj-link:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--purple); border-color: var(--purple); color: var(--purple); }
 
 /* Mobile Responsiveness Fix */
@@ -406,7 +418,20 @@ nav.hidden { transform: translateY(-100%); }
   .project-card {
     border-right: none;
   }
-}   
+}  
+
+/* Specific style for the View button to make it stand out slightly */
+.view-btn {
+  background: var(--bg);
+  border-color: var(--cyan); /* Accent border using your cyan */
+  color: var(--text);
+}
+
+.view-btn:hover {
+  background: var(--cyan);
+  color: #000;
+  box-shadow: 6px 6px 0 #000;
+}
 
 /* ═══════════════════════════════════════════════════════════════
    SKILLS & MARQUEE
