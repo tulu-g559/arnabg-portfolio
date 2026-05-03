@@ -592,6 +592,34 @@ footer span { color: var(--cyan); font-weight: 700; }
 #scrollTop.visible { opacity: 1; transform: translateY(0); }
 #scrollTop:hover { transform: translate(-3px,-3px); box-shadow: 9px 9px 0 var(--purple); background: var(--purple); color: #FFF; border-color: #000; }
 
+.site-footer {
+  padding: 40px 20px;
+  border-top: var(--border-width) solid var(--border-color);
+  background: var(--bg);
+  display: flex;
+  flex-direction: column; /* Stacks the two divs vertically */
+  align-items: center;    /* Centers them horizontally */
+  gap: 10px;              /* Space between the copyright and design line */
+}
+
+.footer-copy {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.footer-design {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center; /* Ensures the text itself is centered */
+}
+
+.footer-design span {
+  color: var(--cyan); /* Using your brand cyan for the name */
+}
+
 /* ═══════════════════════════════════════════════════════════════
    ANIMATIONS & RESPONSIVE
 ═══════════════════════════════════════════════════════════════ */
