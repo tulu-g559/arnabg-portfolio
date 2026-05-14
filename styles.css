@@ -593,9 +593,36 @@ body.dark-mode .theme-icon-img {
 footer { background: var(--bg); border-top: var(--border-width) solid var(--border-color); padding: 40px 32px; display: flex; justify-content: space-between; font-family: 'Space Mono', monospace; font-size: 0.8rem; color: var(--text2); text-transform: uppercase; }
 footer span { color: var(--cyan); font-weight: 700; }
 
-#scrollTop { position: fixed; bottom: 32px; right: 32px; width: 64px; height: 64px; border: var(--border-width) solid var(--border-color); background: var(--cyan); color: #000; font-size: 1.8rem; cursor: none; box-shadow: 6px 6px 0 var(--border-color); transition: all 0.2s; opacity: 0; transform: translateY(20px); z-index: 900; }
-#scrollTop.visible { opacity: 1; transform: translateY(0); }
-#scrollTop:hover { transform: translate(-3px,-3px); box-shadow: 9px 9px 0 var(--purple); background: var(--purple); color: #FFF; border-color: #000; }
+#scrollTop { 
+    position: fixed; 
+    bottom: 32px; 
+    right: 32px; 
+    width: 48px;  
+    height: 40px; 
+    /* Hardcoded to black instead of var(--border-color) */
+    border: var(--border-width) solid #000; 
+    background: var(--cyan); 
+    color: #000; 
+    font-size: 1.4rem; 
+    cursor: none; 
+    /* Hardcoded shadow to black */
+    box-shadow: 6px 6px 0 #000; 
+    transition: all 0.2s; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    z-index: 900; 
+}
+#scrollTop.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+#scrollTop:hover { 
+    transform: translate(-3px,-3px); 
+    box-shadow: 9px 9px 0 var(--purple); 
+    background: var(--purple); 
+    color: #FFF; 
+    border-color: #000; 
+}
 
 .site-footer {
   padding: 40px 20px;
