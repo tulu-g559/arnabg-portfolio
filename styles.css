@@ -598,7 +598,7 @@ footer span { color: var(--cyan); font-weight: 700; }
     bottom: 32px; 
     right: 32px; 
     width: 48px;  
-    height: 40px; 
+    height: 48px; 
     /* Hardcoded to black instead of var(--border-color) */
     border: var(--border-width) solid #000; 
     background: var(--cyan); 
